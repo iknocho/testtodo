@@ -15,3 +15,4 @@ public class PostsUpdateRequestDto {
         this.content=content;
     }
 }
+//
