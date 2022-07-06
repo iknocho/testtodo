@@ -1,10 +1,10 @@
-com/lookalike/admin/web/HelloControllerTest.java
- com.lookalike.admin.web.HelloControllerTest
-com/lookalike/admin/web/dto/HelloResponseDtoTest.java
- com.lookalike.admin.web.dto.HelloResponseDtoTest
 com/lookalike/admin/domain/posts/PostsRepositoryTest.java
  com.lookalike.admin.domain.posts.PostsRepositoryTest
+com/lookalike/admin/web/dto/HelloResponseDtoTest.java
+ com.lookalike.admin.web.dto.HelloResponseDtoTest
 com/lookalike/admin/web/PostsApiControllerTest.java
  com.lookalike.admin.web.PostsApiControllerTest
 com/lookalike/admin/web/IndexControllerTest.java
  com.lookalike.admin.web.IndexControllerTest
+com/lookalike/admin/web/HelloControllerTest.java
+ com.lookalike.admin.web.HelloControllerTest

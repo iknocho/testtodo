@@ -1,5 +1,8 @@
 package com.lookalike.admin.web.dto;
+import javax.servlet.http.HttpSession;
 
+import com.lookalike.admin.config.auth.LoginUser;
+import com.lookalike.admin.config.auth.dto.SessionUser;
 import com.lookalike.admin.service.PostsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -12,12 +15,26 @@ import org.springframework.web.bind.annotation.PathVariable;
 @Controller
 public class IndexController {
     private final PostsService postsService;
+    private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model){
+    public String index(Model model, @LoginUser SessionUser user){
         //Model객체: 서버 템플릿 엔지에서 사용할 수 있는 객체를 저장가능하다
         //postService.findAllDesc()로 가져온 결과를 posts로 index.mustache에 전달한다
         model.addAttribute("posts",postsService.findAllDesc());
+
+        //**SessionUser user=(SessionUser) httpSession.getAttribute("user");
+        //위 코드 한줄을 줄이기 위해서 @LoginUser, LoginUserArgumentResolver,webConig 설정이 필요
+
+
+
+        //CustomOAuth2UserService에서 로그인 성고시 세션에 SessionUser를 저장하도록 구성
+
+        if(user!=null){
+            model.addAttribute("userName",user.getName());
+        //세션에 저장된 값이 있을때만 model애 userName으로 등록
+        //세션에 저장된 값이 없으면 model에 값이 없으므로 login버튼이 보이게 된다.
+        }
 
         return "index";
         //mustach stater 덕분에 문자열을 반환할 때

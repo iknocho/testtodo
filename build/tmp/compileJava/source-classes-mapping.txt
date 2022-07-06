@@ -1,29 +1,53 @@
-com/lookalike/admin/domain/BaseTimeEntity.java
- com.lookalike.admin.domain.BaseTimeEntity
-com/lookalike/admin/web/HelloController.java
- com.lookalike.admin.web.HelloController
 com/lookalike/admin/web/dto/PostsUpdateRequestDto.java
  com.lookalike.admin.web.dto.PostsUpdateRequestDto
  com.lookalike.admin.web.dto.PostsUpdateRequestDto$PostsUpdateRequestDtoBuilder
-com/lookalike/admin/web/dto/HelloResponseDto.java
- com.lookalike.admin.web.dto.HelloResponseDto
 com/lookalike/admin/domain/posts/Posts.java
  com.lookalike.admin.domain.posts.Posts
  com.lookalike.admin.domain.posts.Posts$PostsBuilder
+com/lookalike/admin/domain/posts/PostsRepository.java
+ com.lookalike.admin.domain.posts.PostsRepository
+com/lookalike/admin/service/PostsService.java
+ com.lookalike.admin.service.PostsService
+com/lookalike/admin/config/auth/LoginUserArgumentResolver.java
+ com.lookalike.admin.config.auth.LoginUserArgumentResolver
+com/lookalike/admin/web/PostsApiController.java
+ com.lookalike.admin.web.PostsApiController
+com/lookalike/admin/domain/BaseTimeEntity.java
+ com.lookalike.admin.domain.BaseTimeEntity
+com/lookalike/admin/domain/user/UserRepository.java
+ com.lookalike.admin.domain.user.UserRepository
+com/lookalike/admin/config/WebConfig.java
+ com.lookalike.admin.config.WebConfig
+com/lookalike/admin/config/auth/SecurityConfig.java
+ com.lookalike.admin.config.auth.SecurityConfig
+com/lookalike/admin/config/auth/dto/OAuthAttributes.java
+ com.lookalike.admin.config.auth.dto.OAuthAttributes
+ com.lookalike.admin.config.auth.dto.OAuthAttributes$OAuthAttributesBuilder
+com/lookalike/admin/domain/user/User.java
+ com.lookalike.admin.domain.user.User
+ com.lookalike.admin.domain.user.User$UserBuilder
+com/lookalike/admin/config/auth/LoginUser.java
+ com.lookalike.admin.config.auth.LoginUser
+com/lookalike/admin/domain/user/Role.java
+ com.lookalike.admin.domain.user.Role
 com/lookalike/admin/web/dto/PostsResponseDto.java
  com.lookalike.admin.web.dto.PostsResponseDto
+com/lookalike/admin/web/dto/IndexController.java
+ com.lookalike.admin.web.dto.IndexController
+com/lookalike/admin/web/dto/PostsListResponseDto.java
+ com.lookalike.admin.web.dto.PostsListResponseDto
+com/lookalike/admin/web/HelloController.java
+ com.lookalike.admin.web.HelloController
+com/lookalike/admin/config/auth/CustomOAuth2UserService.java
+ com.lookalike.admin.config.auth.CustomOAuth2UserService
+com/lookalike/admin/web/dto/HelloResponseDto.java
+ com.lookalike.admin.web.dto.HelloResponseDto
 com/lookalike/admin/web/dto/PostsSaveRequestDto.java
  com.lookalike.admin.web.dto.PostsSaveRequestDto
  com.lookalike.admin.web.dto.PostsSaveRequestDto$PostsSaveRequestDtoBuilder
+com/lookalike/admin/config/auth/dto/SessionUser.java
+ com.lookalike.admin.config.auth.dto.SessionUser
 com/lookalike/admin/Application.java
  com.lookalike.admin.Application
-com/lookalike/admin/domain/posts/PostsRepository.java
- com.lookalike.admin.domain.posts.PostsRepository
-com/lookalike/admin/web/dto/PostsListResponseDto.java
- com.lookalike.admin.web.dto.PostsListResponseDto
-com/lookalike/admin/service/PostsService.java
- com.lookalike.admin.service.PostsService
-com/lookalike/admin/web/PostsApiController.java
- com.lookalike.admin.web.PostsApiController
-com/lookalike/admin/web/dto/IndexController.java
- com.lookalike.admin.web.dto.IndexController
+com/lookalike/admin/config/JpaConfig.java
+ com.lookalike.admin.config.JpaConfig
