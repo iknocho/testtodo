@@ -37,6 +37,7 @@ dependencies {
     testCompile('org.springframework.boot:spring-boot-starter-test')
     compile('org.springframework.boot:spring-boot-starter-mustache')
     compile('org.springframework.session:spring-session-jdbc')
+    compile('org.mariadb.jdbc:mariadb-java-client')
 
     compile('org.springframework.security:spring-security-test')
 }

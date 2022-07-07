@@ -16,6 +16,8 @@ com/lookalike/admin/domain/BaseTimeEntity.java
  com.lookalike.admin.domain.BaseTimeEntity
 com/lookalike/admin/domain/user/UserRepository.java
  com.lookalike.admin.domain.user.UserRepository
+com/lookalike/admin/config/JpaConfig.java
+ com.lookalike.admin.config.JpaConfig
 com/lookalike/admin/config/WebConfig.java
  com.lookalike.admin.config.WebConfig
 com/lookalike/admin/config/auth/SecurityConfig.java
@@ -36,8 +38,8 @@ com/lookalike/admin/web/dto/IndexController.java
  com.lookalike.admin.web.dto.IndexController
 com/lookalike/admin/web/dto/PostsListResponseDto.java
  com.lookalike.admin.web.dto.PostsListResponseDto
-com/lookalike/admin/web/HelloController.java
- com.lookalike.admin.web.HelloController
+com/lookalike/admin/Application.java
+ com.lookalike.admin.Application
 com/lookalike/admin/config/auth/CustomOAuth2UserService.java
  com.lookalike.admin.config.auth.CustomOAuth2UserService
 com/lookalike/admin/web/dto/HelloResponseDto.java
@@ -47,7 +49,5 @@ com/lookalike/admin/web/dto/PostsSaveRequestDto.java
  com.lookalike.admin.web.dto.PostsSaveRequestDto$PostsSaveRequestDtoBuilder
 com/lookalike/admin/config/auth/dto/SessionUser.java
  com.lookalike.admin.config.auth.dto.SessionUser
-com/lookalike/admin/Application.java
- com.lookalike.admin.Application
-com/lookalike/admin/config/JpaConfig.java
- com.lookalike.admin.config.JpaConfig
+com/lookalike/admin/web/HelloController.java
+ com.lookalike.admin.web.HelloController
