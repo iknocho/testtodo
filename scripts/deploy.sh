@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPOSITORY=/home/ec2-user/step2
+REPOSITORY=/home/ec2-user/app/step2
 PROJECT_NAME=iknotest-webservice
 
 echo ">빌드 파일 복사"
