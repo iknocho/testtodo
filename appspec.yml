@@ -4,3 +4,17 @@ files:
   - source: / #CodeDeploy에서 전달해 준 파일 중 destination으로 이동시킬 대상을 지정, / 지정시 전체파일을 말한다
     destination: /home/ec2-user/app/step2/zip
     overwirte: yes
+
+#codeDeploy에서 EC2 서버로 넘겨준 파일들 모두 ec2-user 권한을 갖도록 한다
+permissions:
+  - object: /
+    pattern: "**"
+    owner: ec2-user
+    group: ec2-user
+
+#codeDeploy 배포 단계에서 실행할 명령어를 지정
+hooks:
+  ApplicationStart:
+    - location: deploy.sh
+      timeout: 60
+      runas: ec2-user
