@@ -34,6 +34,6 @@ echo ">JAR_NAME 실행"
 
 nohup java -jar \
   -Dspring.config.location=classpath:/application.properties,classpath:/application-real.properties,
-  /home/ec2-usr/app/application-oauth.properties,/home/ec2-user/app/application-real-db.properties \
+  /home/ec2-user/app/application-oauth.properties,/home/ec2-user/app/application-real-db.properties \
   -Dspring.profiles.active=real \
-  $JAR_NAME > $REPOSITORY/nohup.out 2>&1 &
+  /home/ec2-user/app/step2/board-1.0.1-SNAPSHOT.jar > /home/ec2-user/app/step2/nohup.out 2>&1 &
