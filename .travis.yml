@@ -23,7 +23,7 @@ before_deploy:
   - cd build-deploy && zip -r before-deploy *
   - cd ../ && mkdir -p deploy
   - mv before-deploy/before-deploy.zip deploy/iknotest00.zip
-
+##
 deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY
