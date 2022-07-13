@@ -9,7 +9,10 @@ cp $REPOSITORY/zip/*.jar $REPOSITORY/
 
 echo"현재 구동 중인 애플리케이션 pid 확인"
 
+
+##이 부분 코드 실행안됨 pgrep -fl의 의미 step1 deploy.sh 에서는 PROJECT_NAME = testtodo
 CURRENT_PID=$(pgrep -fl iknotest-webservice | grep jar | awk '{print $1}')
+
 
 echo "현재 구동중인 애플리케이션 pid: $CURRENT_PID"
 

@@ -65,6 +65,7 @@ public class PostsApiControllerTest {
     @Test
     @WithMockUser(roles="USER")
     public void Posts_등록() throws Exception{
+        //given 테스트 기본적으로 세팅하는 값
         String title="title";
         String content="content";
         PostsSaveRequestDto requestDto = PostsSaveRequestDto.builder()
@@ -78,7 +79,7 @@ public class PostsApiControllerTest {
         ResponseEntity<Long> responseEntity=restTemplate.
                 postForEntity(url,requestDto,Long.class);
 
-        //when
+        //when 테스트를 하기 위한 조건을 지정
         //assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
         //assertThat(responseEntity.getBody()).isGreaterThan(0L);
         mvc.perform(post(url)
@@ -86,7 +87,7 @@ public class PostsApiControllerTest {
                 .content(new ObjectMapper().writeValueAsString(requestDto)))
                 .andExpect(status().isOk());
 
-        //then
+        //then 테스트 후 우리가 예상한대로 동작하는지 확인
 
         List<Posts> all= postsRepository.findAll();
         assertThat(all.get(0).getTitle()).isEqualTo(title);
@@ -96,6 +97,8 @@ public class PostsApiControllerTest {
     @Test
     @WithMockUser(roles="USER")
     public void Posts_수정된다() throws Exception{
+
+
         Posts savedPosts = postsRepository.save(Posts.builder()
                                         .title("title")
                                         .content("content")

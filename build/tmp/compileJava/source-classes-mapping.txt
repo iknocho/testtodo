@@ -20,8 +20,8 @@ com/lookalike/admin/config/JpaConfig.java
  com.lookalike.admin.config.JpaConfig
 com/lookalike/admin/config/WebConfig.java
  com.lookalike.admin.config.WebConfig
-com/lookalike/admin/config/auth/SecurityConfig.java
- com.lookalike.admin.config.auth.SecurityConfig
+com/lookalike/admin/web/ProfileController.java
+ com.lookalike.admin.web.ProfileController
 com/lookalike/admin/config/auth/dto/OAuthAttributes.java
  com.lookalike.admin.config.auth.dto.OAuthAttributes
  com.lookalike.admin.config.auth.dto.OAuthAttributes$OAuthAttributesBuilder
@@ -51,3 +51,5 @@ com/lookalike/admin/config/auth/dto/SessionUser.java
  com.lookalike.admin.config.auth.dto.SessionUser
 com/lookalike/admin/web/HelloController.java
  com.lookalike.admin.web.HelloController
+com/lookalike/admin/config/auth/SecurityConfig.java
+ com.lookalike.admin.config.auth.SecurityConfig

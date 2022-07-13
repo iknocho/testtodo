@@ -6,5 +6,7 @@ com/lookalike/admin/web/PostsApiControllerTest.java
  com.lookalike.admin.web.PostsApiControllerTest
 com/lookalike/admin/web/IndexControllerTest.java
  com.lookalike.admin.web.IndexControllerTest
+com/lookalike/admin/web/ProfileControllerUnitTest.java
+ com.lookalike.admin.web.ProfileControllerUnitTest
 com/lookalike/admin/web/HelloControllerTest.java
  com.lookalike.admin.web.HelloControllerTest
